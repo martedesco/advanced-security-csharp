@@ -128,7 +128,7 @@ Clicking on the security alert will provide details about the security alert inc
 
 #### Security Alert Description
 
-Click `Show more` to view a full desciption of the alert including examples and links to additional information.
+Click `Show more` to view a full description of the alert including examples and links to additional information.
 
 <img src="images/07-security-codeql-show-more.png" width="80%"/>
 
@@ -163,9 +163,9 @@ Click `show paths` in order to see the dataflow path that resulted in this alert
   
 <summary>Fix the Security Alert</summary>
 
-In order to fix this specific alert, we will need to ensure the content being write to the `HttpContext`'s response is validated and sanitized.
+In order to fix this specific alert, we will need to ensure the content being written to the `HttpContext`'s response is validated and sanitized.
 
-Click on the `Code` tab and [Edit](https://docs.github.com/en/free-pro-team@latest/github/managing-files-in-a-repository/editing-files-in-your-repository) the file [`Autocomplete.ashx.cs`](./WebGoat/WebGoatCoins/Autocomplete.ashx.cs) in the `WebGoat/WebGoatCoins` folder. For this demonstration purpose, we will simply write some hardcoded value to the `HttpContext` instance, this granatees the parameter is sanitized and safe.
+Click on the `Code` tab and [Edit](https://docs.github.com/en/free-pro-team@latest/github/managing-files-in-a-repository/editing-files-in-your-repository) the file [`Autocomplete.ashx.cs`](./WebGoat/WebGoatCoins/Autocomplete.ashx.cs) in the `WebGoat/WebGoatCoins` folder. For demonstration purposes, we will simply write some hardcoded value to the `HttpContext` instance; this guarantees the parameter is sanitized and safe.
 
 <img src="images/11-fix-source-code.png" width="80%"/>
 
@@ -189,7 +189,7 @@ Notice that Code Scanning has detected that this Pull Request will fix the cross
 
 <img src="images/14-fix-detail.png" width="80%"/>
 
-Merge the Pull Request. After the Pull Request has been merged, another Workflow will kick off to scan the repository for any vulnerabilties. 
+Merge the Pull Request. After the Pull Request has been merged, another Workflow will kick off to scan the repository for any vulnerabilities.
 
 #### Closed Security Alerts
 
